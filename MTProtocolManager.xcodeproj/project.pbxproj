@@ -14,6 +14,7 @@
 		8D32B31C1FF34CA5009D97A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D32B31A1FF34CA5009D97A8 /* LaunchScreen.storyboard */; };
 		8D32B31F1FF34CA5009D97A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D32B31E1FF34CA5009D97A8 /* main.m */; };
 		8D32B3291FF34CA5009D97A8 /* MTProtocolManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D32B3281FF34CA5009D97A8 /* MTProtocolManagerUITests.m */; };
+		8D32B3361FF34D0C009D97A8 /* MTProtocolManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D32B3351FF34D0C009D97A8 /* MTProtocolManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		8D32B3241FF34CA5009D97A8 /* MTProtocolManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTProtocolManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D32B3281FF34CA5009D97A8 /* MTProtocolManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTProtocolManagerUITests.m; sourceTree = "<group>"; };
 		8D32B32A1FF34CA5009D97A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D32B3341FF34D0C009D97A8 /* MTProtocolManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTProtocolManager.h; sourceTree = "<group>"; };
+		8D32B3351FF34D0C009D97A8 /* MTProtocolManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTProtocolManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		8D32B30E1FF34CA4009D97A8 /* MTProtocolManager */ = {
 			isa = PBXGroup;
 			children = (
+				8D32B3331FF34CFD009D97A8 /* MTProtocolManager */,
 				8D32B30F1FF34CA4009D97A8 /* AppDelegate.h */,
 				8D32B3101FF34CA5009D97A8 /* AppDelegate.m */,
 				8D32B3121FF34CA5009D97A8 /* ViewController.h */,
@@ -101,6 +105,15 @@
 				8D32B32A1FF34CA5009D97A8 /* Info.plist */,
 			);
 			path = MTProtocolManagerUITests;
+			sourceTree = "<group>";
+		};
+		8D32B3331FF34CFD009D97A8 /* MTProtocolManager */ = {
+			isa = PBXGroup;
+			children = (
+				8D32B3341FF34D0C009D97A8 /* MTProtocolManager.h */,
+				8D32B3351FF34D0C009D97A8 /* MTProtocolManager.m */,
+			);
+			path = MTProtocolManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D32B3361FF34D0C009D97A8 /* MTProtocolManager.m in Sources */,
 				8D32B3141FF34CA5009D97A8 /* ViewController.m in Sources */,
 				8D32B31F1FF34CA5009D97A8 /* main.m in Sources */,
 				8D32B3111FF34CA5009D97A8 /* AppDelegate.m in Sources */,
@@ -358,7 +372,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75B7BR7JE4;
 				INFOPLIST_FILE = MTProtocolManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Long.MTProtocolManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -371,7 +387,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75B7BR7JE4;
 				INFOPLIST_FILE = MTProtocolManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Long.MTProtocolManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
